@@ -5,7 +5,7 @@ import re
 from os import path
 
 
-README = open(os.path.join(os.path.dirname(__file__), 'Readme.md')).read()
+README = open(os.path.join(os.path.dirname(__file__), 'README.md')).read()
 
 # allow setup.py to be run from any path
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
@@ -30,7 +30,7 @@ setup(
     packages=['dmakr'],
     license='MIT License',
     description='A simple Django domain hacking tool.',
-    long_description=read('Readme.md'),
+    long_description=read('README.md'),
     url='http://www.domainmakr.eu',
     author='Jan Brennenstuhl',
     author_email='jbspeakr@funkblocka.de',
