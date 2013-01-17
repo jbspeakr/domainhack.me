@@ -3,3 +3,5 @@
 *.vim
 *.db
 *.mo
+dist/
+django_db
