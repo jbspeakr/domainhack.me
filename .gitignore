@@ -1,5 +1,7 @@
-.py[co]
-.DS_Store
+*.py
+*.pyc
+*.py~
+*.DS_Store
 *.vim
 *.db
 *.mo
