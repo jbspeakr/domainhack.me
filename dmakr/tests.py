@@ -28,7 +28,6 @@ class DomainViewTest(TestCase):
         """
 
         create_domain(tld='ai', country='aiTest')
-        #response = self.client.get('/domainmakr/domainhack/%s' % 'domain/')
         response = self.client.get(reverse('dmakr:domainhack', args=('domain/', )))
         self.assertEqual(response.status_code, 200)
         self.assertEquals(response.context['word'], 'domain/')
