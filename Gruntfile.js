@@ -26,7 +26,6 @@ module.exports = function(grunt) {
     concat: {
       dist: {
         src: [
-          'service-worker-registration.js',
           'js/app.js',
           'js/controller.js',
           'js/data.js',
