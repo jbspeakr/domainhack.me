@@ -1,8 +1,8 @@
-*.pyc
-*.py~
-*.DS_Store
-*.vim
-*.db
-*.mo
+.idea/
+*.iml
+
 dist/
-django_db
+dev/node_modules/
+node_modules/
+index.html
+service-worker.js

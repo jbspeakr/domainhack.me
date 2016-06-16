@@ -100,6 +100,7 @@ body{
     color:#75715e;
     font-family: 'Droid Sans Mono', sans-serif;
     background:#272822;
+    font-size: 16px;
 }
 
 h1 {
@@ -109,6 +110,7 @@ h1 {
     padding-top: 60px;
     text-align: center;
     font-size: 2em;
+    font-family: 'Droid Sans Mono', sans-serif;
 }
 
 h2 {
@@ -117,6 +119,12 @@ h2 {
     text-align: center;
     font-size: 1.5em;
     padding-bottom: 30px;
+    font-family: 'Droid Sans Mono', sans-serif;
+}
+
+h3 {
+    font-family: 'Droid Sans Mono', sans-serif;
+    font-weight: 700;
 }
 
 h3:before{
@@ -149,12 +157,12 @@ input[type="text"] {
     color:#a7ec21;
 }
 
-.table th, .table td {
+.table > thead > tr > th, .table > tbody > tr > td {
     border: none;
 }
 
 .domain {
-    text-shadow: 1px 1px 0px #000;
+    text-shadow: 1px 1px 0 #000;
 }
 
 .pink{color:#ff007f}
@@ -162,40 +170,6 @@ input[type="text"] {
 .green{color:#a7ec21}
 .yellow{color:#e6db74}
 .white{color:#fff}
-
-.wave-enter-setup, .wave-leave-setup {
-  -webkit-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) .5s;
-  -moz-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
-  -o-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
-  transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) .5s;
-    line-height:100%;
-}
-
-.wave-enter-setup {
-  position:relative;
-  left:100%;
- line-height:100%;
-}
-
-
-.wave-enter-start {
-  left:0;
-line-height:100%;
-}
-
-.wave-leave-setup {
-  position:absolute;
-  left:0;
-line-height: 100%;
-}
-
-.wave-leave-start {
-  left:-100%;
-  line-height: 10%;
-}
-
-
-
 
 /* ==========================================================================
    Helper classes
