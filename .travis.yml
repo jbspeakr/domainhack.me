@@ -3,7 +3,7 @@ node_js:
   - '0.10'
 env:
   global:
-    - GH_REF: "github.com/jbspeakr/domainhack.me"
+    - GH_REF: "github.com/jbspeakr/domainhack.me.git"
 before_script:
   - npm install -g grunt-cli
   - npm install -g sw-precache
