@@ -12,5 +12,6 @@ echo "Starting to deploy..."
  cp ../CNAME ./CNAME
  git add .
  git commit -a -m "Deployed to Github Pages"
- git push --force "https://${GH_TOKEN}@${GH_REF}" master:gh-pages > /dev/null 2>&1
+ git push --force "https://${GH_TOKEN}@${GH_REF}" master:gh-pages
 )
+echo "Deployed."
