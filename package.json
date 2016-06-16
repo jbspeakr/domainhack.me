@@ -11,6 +11,6 @@
     "grunt-contrib-uglify": "~0.5.0",
     "grunt-filerev": "^2.1.2",
     "grunt-git-revision": "0.0.1",
-    "grunt-injector": "^0.6.0",
+    "grunt-injector": "^0.6.0"
   }
 }
