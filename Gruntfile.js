@@ -40,6 +40,13 @@ module.exports = function(grunt) {
         dest: 'dist/<%= pkg.name %>.min.js'
       }
     },
+    cssmin: {
+      dist: {
+        files: {
+          'dist/main.min.css': 'css/main.css'
+        }
+      }
+    },
     filerev: {
       options: {
         algorithm: 'md5',
@@ -50,7 +57,8 @@ module.exports = function(grunt) {
       },
       dist: {
         src: [
-          '<%= uglify.dist.dest %>'
+          '<%= uglify.dist.dest %>',
+          'dist/main.min.css'
         ]
       }
     },
@@ -62,7 +70,8 @@ module.exports = function(grunt) {
       dist: {
         files: {
           'dist/index.injected.html': [
-            'dist/domainhack.min.*.js'
+            'dist/domainhack.min.*.js',
+            'dist/main.min.*.css'
           ]
         }
       }
@@ -85,7 +94,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-clean');
-  // grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-htmlmin');
   grunt.loadNpmTasks('grunt-filerev');
   grunt.loadNpmTasks('grunt-injector');
@@ -154,6 +163,6 @@ module.exports = function(grunt) {
 
   // Default task.
   grunt.registerTask('release',
-    ['clean', 'concat', 'uglify', 'revision', 'filerev', 'injector', 'htmlmin']);
+    ['clean', 'concat', 'uglify', 'cssmin', 'revision', 'filerev', 'injector', 'htmlmin']);
 
 };

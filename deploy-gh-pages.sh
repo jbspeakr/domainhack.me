@@ -7,9 +7,6 @@ echo "Starting to deploy..."
  git config user.name ${GIT_NAME}
  git config user.email ${GIT_EMAIL}
 
- mkdir css
- cp -r ../css/* ./css/
-
  mkdir dist
  cp -r ../dist/* ./dist/
 
