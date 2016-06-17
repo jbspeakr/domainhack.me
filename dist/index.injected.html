@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>DomainHack Me - Domain-Hacking Tool</title>
+        <meta name="viewport" content="width=device-width">
+        <meta name="keywords" content="domain-hack, domain-hacking, domain-hacking tool, domain-maker"/>
+        <meta name="description" content="Domainhack.me is the world's finest domain-hacking tool! It provides the fastest way to create great domain-hacks for you and your company..." />
+        <link rel="canonical" href="https://www.domainhack.me" />
+        <meta property="twitter:card" content="summary" />
+        <meta property="twitter:creator" content="@jbspeakr" />
+        <meta property="twitter:image" content="img/logo.png" />
+        <meta property="twitter:description" content="Domainhack.me is the world's finest domain-hacking tool! It provides the fastest way to create great domain-hacks for you and your company..." />
+        <meta property="og:locale" content="en_GB"/>
+        <meta property="og:description" content="Domainhack.me is the world's finest domain-hacking tool! It provides the fastest way to create great domain-hacks for you and your company..." />
+        <meta property="og:title" content="DomainHack Me - Finest Domain-Hacking Tool"/>
+        <meta property="og:url" content="https://www.domainhack.me"/>
+        <meta property="og:site_name" content="DomainHack Me"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:image" content="img/logo.png" />
+        <link rel="author" href="https://plus.google.com/+JanBrennenstuhl" />
+
+        <link rel="apple-touch-icon" sizes="57x57" href="https://www.domainhack.me/img/apple-touch-icon-57x57.png?v=nggn84yz89" />
+        <link rel="apple-touch-icon" sizes="60x60" href="https://www.domainhack.me/img/apple-touch-icon-60x60.png?v=nggn84yz89" />
+        <link rel="apple-touch-icon" sizes="72x72" href="https://www.domainhack.me/img/apple-touch-icon-72x72.png?v=nggn84yz89" />
+        <link rel="apple-touch-icon" sizes="76x76" href="https://www.domainhack.me/img/apple-touch-icon-76x76.png?v=nggn84yz89" />
+        <link rel="apple-touch-icon" sizes="114x114" href="https://www.domainhack.me/img/apple-touch-icon-114x114.png?v=nggn84yz89" />
+        <link rel="apple-touch-icon" sizes="120x120" href="https://www.domainhack.me/img/apple-touch-icon-120x120.png?v=nggn84yz89" />
+        <link rel="icon" type="image/png" href="https://www.domainhack.me/img/favicon-32x32.png?v=nggn84yz89" sizes="32x32" />
+        <link rel="icon" type="image/png" href="https://www.domainhack.me/img/favicon-96x96.png?v=nggn84yz89" sizes="96x96" />
+        <link rel="icon" type="image/png" href="https://www.domainhack.me/img/favicon-16x16.png?v=nggn84yz89" sizes="16x16" />
+        <link rel="manifest" href="https://www.domainhack.me/img/manifest.json?v=nggn84yz89" />
+        <link rel="mask-icon" href="https://www.domainhack.me/img/safari-pinned-tab.svg?v=nggn84yz89" color="#333333" />
+        <link rel="shortcut icon" href="https://www.domainhack.me/img/favicon.ico?v=nggn84yz89" />
+        <meta name="msapplication-TileColor" content="#333333" />
+        <meta name="msapplication-config" content="https://www.domainhack.me/img/browserconfig.xml?v=nggn84yz89" />
+        <meta name="theme-color" content="#333333" />
+
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" />
+        <link href="//fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet" type="text/css" />
+        <!-- injector:css -->
+        <link rel="stylesheet" href="dist/main.min.eb211ecd.css">
+        <!-- endinjector -->
+
+    </head>
+    <body data-ng-app="dMakr">
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> or <a href="https://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="container" data-ng-controller="MainCtrl">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>DomainHack.Me</h1>
+                    <h2>The World's finest Domain-Hacking Tool</h2>
+                    <div class="col-md-6 col-md-offset-3">
+                        <input type="text" class="form-control" placeholder="e.g. testinput" ng-model="search">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+              <div class="span12" data-ng-cloak data-ng-show="search">
+                  <table class="table table-striped" >
+                      <thead>
+                          <tr>
+                              <th>#</th>
+                              <th>Domain</th>
+                              <th>Country</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr ng-repeat="hack in domainhacks" >
+                              <td>{{ $index }}</td>
+                              <td><span class="blue">{{ hack.name }}</span><span class="pink">.{{ hack.tld }}</span><span class="green">/{{ hack.suffix }}</span></td>
+                              <td>{{ hack.country }}</td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Domain-Hack, WTF?!</h3>
+                    <p>A <a href="https://en.wikipedia.org/wiki/Domain_hack" title="Domain Hacks, Wikipedia">domainhack</a> is an unconventional domain name that combines domain levels, especially the Top-Level Domain (TLD), to spell out the full "name" or title of the domain. Domainhacks offer the ability to produce extremely short domain names.  </p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Domain-Hack Examples</h3>
+                    <p>This makes them potentially valuable as redirectors, pastebins, base domains from which to delegate subdomains and URL shortening services. Popular examples are blo.gs, del.icio.us, instagr.am, dub.ai, canv.as.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>The Creator</h3>
+                    <p>Domainhack.me is based on Google's <span class="pink">AngularJS</span> and was created by <a href="http://jan.brennenstuhl.me/" title="Jan Brennenstuhl - Software Engineer, Web Developer and Open Data Activist">Jan Brennenstuhl</a> (<a href="https://twitter.com/jbspeakr"><span class="green">@jbspeakr</span></a>), software engineer, web developer and open data activist from Berlin.</p>
+                </div>
+            </div>
+        </div>
+        <script src="service-worker-registration.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+        <!-- injector:js -->
+        <script src="dist/domainhack.min.4084f7bd.js"></script>
+        <!-- endinjector -->
+    </body>
+</html>
