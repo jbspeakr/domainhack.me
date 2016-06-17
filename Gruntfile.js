@@ -136,6 +136,7 @@ module.exports = function(grunt) {
       }],
       staticFileGlobs: [
         'index.html',
+        'service-worker-registration.js',
         'dist/**.min.**.js',
         'dist/**.min.**.css',
         'img/**'
