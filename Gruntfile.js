@@ -136,11 +136,8 @@ module.exports = function(grunt) {
       }],
       staticFileGlobs: [
         'index.html',
-        'dist/**.min.*'
-
-        // 'https://fonts.googleapis.com/css?family=Droid+Sans+Mono',
-        //'https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css',
-        //'https://ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular.min.js'
+        'dist/**.min.**.js',
+        'dist/**.min.**.css'
       ],
       // verbose defaults to false, but for the purposes of this demo, log more.
       verbose: true
