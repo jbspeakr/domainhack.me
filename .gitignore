@@ -1,5 +1,7 @@
 .idea/
 *.iml
+.DS_Store
+favicons.zip
 
 dist/
 dev/node_modules/

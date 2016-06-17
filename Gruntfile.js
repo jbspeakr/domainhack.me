@@ -138,8 +138,7 @@ module.exports = function(grunt) {
         'index.html',
         'dist/**.min.**.js',
         'dist/**.min.**.css',
-        'img/**.jpg',
-        'img/**.ico',
+        'img/**'
       ],
       // verbose defaults to false, but for the purposes of this demo, log more.
       verbose: true
