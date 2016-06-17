@@ -137,7 +137,9 @@ module.exports = function(grunt) {
       staticFileGlobs: [
         'index.html',
         'dist/**.min.**.js',
-        'dist/**.min.**.css'
+        'dist/**.min.**.css',
+        'img/**.jpg',
+        'img/**.ico',
       ],
       // verbose defaults to false, but for the purposes of this demo, log more.
       verbose: true
