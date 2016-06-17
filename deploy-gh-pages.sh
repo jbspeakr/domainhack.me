@@ -17,7 +17,9 @@ echo "Starting to deploy..."
  cp -r ../img/* ./img/
 
  cp ../index.html ./index.html
+ cp ../service-worker-registration.js ./service-worker-registration.js
  cp ../CNAME ./CNAME
+ cp ../googlee518983d279f64b8.html ./googlee518983d279f64b8.html
 
  git add .
  git commit -a -m "Deployed to Github Pages"
